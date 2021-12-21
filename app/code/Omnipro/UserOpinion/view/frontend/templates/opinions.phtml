@@ -1,0 +1,13 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+$viewModel = $block->getViewModel();
+$items = $viewModel->getOpinions();
+?>
+
+<?php foreach ($items as $opinion): ?>
+    <div> <?= $opinion['sku'] ?></div>
+    <div> <?= $opinion['user_email'] ?></div>
+    <div> <?= $opinion['opinion'] ?></div>
+    <div> <?= $opinion['puntuacion'] ?></div>
+    <br><br>
+<?php endforeach ?>

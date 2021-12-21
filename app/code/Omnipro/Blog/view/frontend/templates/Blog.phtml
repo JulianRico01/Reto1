@@ -1,0 +1,10 @@
+<?php
+/** @var \Omnipro\Blog\Block\Template $block */
+?>
+
+<form action="<?php echo $block->getFormAction() ?>" method="post">
+    <input name="image_url" type="text">
+    <input name="user_email" type="text">
+    <input name="opinion" type="text">
+    <input type="submit" value="Send booking informations">
+</form>
